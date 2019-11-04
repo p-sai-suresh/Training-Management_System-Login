@@ -1,0 +1,74 @@
+<div class="">
+    <div class="">
+      <div class="">
+        <h1 class="">
+          <i class=""></i> Register
+        </h1>
+        <% include ./partials/messages %>
+   
+        <form action="/users/register" method="POST">
+          <div class="">
+            <label for="empFirstName">Name</label>
+            <input
+              type="name"
+              id="empFirstName"
+              name="empFirstName"
+              class="form-control"
+              placeholder="Enter Name"
+              value="<%= typeof empFirstName != 'undefined' ? empFirstName : '' %>"
+            />
+          </div>
+          <div class="">
+            <label for="empno">EmpNO</label>
+            <input
+              type="name"
+              id="empno"
+              name="empno"
+              class="form-control"
+              placeholder="Enter EmpNo"
+              value="<%= typeof empno != 'undefined' ? empno : '' %>"
+            />
+          </div>
+          <div class="">
+            <label for="password">Password</label>
+            <input
+              type="password"
+              id="password"
+              name="password"
+              class="form-control"
+              placeholder="Create Password"
+              value="<%= typeof password != 'undefined' ? password : '' %>"
+            />
+            <div class="">
+              <label for="empRole">Role</label>
+              <input
+                type="name"
+                id="empRole"
+                name="empRole"
+                class="form-control"
+                placeholder="Enter Role"
+                value="<%= typeof empRole != 'undefined' ? empRole : '' %>"
+              />
+            </div>
+           
+          </div>
+          <div class="">
+            <label for="empConfirmPassword">Confirm Password</label>
+            <input
+              type="password"
+              id="empConfirmPassword"
+              name="empConfirmPassword"
+              class="form-control"
+              placeholder="Confirm Password"
+              value="<%= typeof empConfirmPassword != 'undefined' ? empConfirmPassword : '' %>"
+            />
+          </div>
+          <button type="submit" class="">
+            Register
+          </button>
+        </form>
+        <p class="lead mt-4">Have An Account? <a href="/users/login">Login</a></p>
+      </div>
+    </div>
+  </div>
+  

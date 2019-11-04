@@ -1,0 +1,49 @@
+
+<link rel="stylesheet"  href="/stylesheets/login.css">
+
+
+
+<div class="container">
+  <div class=row>
+      <div class="col=md-2"></div>
+      <div class="col-md-8">
+          <div class="row" style="margin-top:150px;   box-shadow: -1px 1px 50px 10px black">
+              <div class="col-md-6" >
+                  <ul>
+                      <a href="#" style="border-bottom : 2px solid #D7D31A ; padding:10px ">Sign In</a>
+              
+                  </ul>
+                  <% include ./partials/messages %>
+                  <form action="/users/login" method="POST">
+      
+                  <label for="empno" class="label control-label" > Emp No</label>
+                  <input type="name" id="empno" name="empno" class="form-control"  placeholder="Enter Emp No"
+                  value="<%= typeof empno != 'undefined' ? empno : '' %>"
+                  />
+  
+                 
+                  <label  for="password" class="label control-label" >Password</label>
+                  <input type="password" id="password" class="form-control" name="password" placeholder="Enter Password">
+
+                 
+                 <button type="submit" class="btn btn-info" >Sign In</button><br><br>  
+     
+             </form>
+                </div>
+              <div class="col-md-6">
+             
+
+              </div>
+
+          </div>
+          <div class="col-md-2">
+
+          </div>
+
+      </div>
+      </div>
+    </div>
+    
+    
+
+ 
