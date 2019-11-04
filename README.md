@@ -10,7 +10,7 @@ Steps to run the code:
 5. go to login operation type the user credentials and check the working of the login.
 6. The user will be redirected to different pages based on the role.
 
-Role available:
+Roles available:
 1.manager
 2.coordinator
 3.admin
